@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {AddUser} from "./component/add-user";
+import {NotFound} from "./pages/not-found";
 import {Home} from "./pages/home";
 import {ContactUs} from "./pages/contact-us";
 
@@ -12,7 +12,7 @@ function App() {
           <Routes>
               <Route path={'/'} element={<Home />}/>
               <Route path={'/contact-us'} element={<ContactUs />}/>
-              <Route path={'/add-user'} element={<AddUser />}/>
+              <Route path={'*'} element={<NotFound />}/>
           </Routes>
       </BrowserRouter>
     </div>
