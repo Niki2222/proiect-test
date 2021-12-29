@@ -1,4 +1,4 @@
 import "./add-user.scss";
 export function AddUser(){
-    return <div className={'AddUser'}>Add user</div>
+    return <div className={'AddUser'}>Add any user</div>
 }
